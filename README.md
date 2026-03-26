@@ -100,10 +100,7 @@ The built files will be in the `dist/` directory.
 - **Performance Optimized** - Fast loading and smooth interactions
 - **Accessibility** - Semantic HTML and proper ARIA labels
 
-## 🔗 Related Projects
 
-- [AirPay UPI Android App](https://github.com/cgchiraggupta/airpay) - The Android payment application
-- [AirPay Protocol Documentation](https://github.com/cgchiraggupta/airpay) - Technical documentation
 
 ## 📄 License
 
@@ -125,4 +122,4 @@ For questions or feedback, please open an issue on GitHub.
 
 ---
 
-Built with ❤️ for the AirPay UPI project
+Built with ❤️ for the AirPay payment platform
