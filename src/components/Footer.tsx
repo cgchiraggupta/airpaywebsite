@@ -13,7 +13,7 @@ export function Footer() {
   return (
     <footer className="bg-background py-12 px-8 md:px-24 border-t border-divider flex flex-col md:flex-row justify-between items-end min-h-[30vh]">
       <div className="font-mono text-text-hint text-sm md:text-base mb-8 md:mb-0">
-        <span className="text-text-primary">&gt;</span> FlowStable_UPI.terminate()
+        <span className="text-text-primary">&gt;</span> AirPay_UPI.terminate()
         <span className={`inline-block w-2 h-4 bg-text-primary ml-1 align-middle ${showCursor ? 'opacity-100' : 'opacity-0'}`} />
       </div>
 
@@ -22,7 +22,7 @@ export function Footer() {
         <a href="#" className="hover:text-text-primary transition-colors duration-0">GitHub</a>
         <a href="#" className="hover:text-text-primary transition-colors duration-0">Security</a>
         <a href="#" className="hover:text-text-primary transition-colors duration-0">Compliance</a>
-        <div className="mt-4 text-text-secondary">Â© 2026 FLOWSTABLE PROTOCOL</div>
+        <div className="mt-4 text-text-secondary">Â© 2026 AIRPAY PROTOCOL</div>
       </div>
     </footer>
   );

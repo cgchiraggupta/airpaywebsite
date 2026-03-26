@@ -28,7 +28,7 @@ export function HeroSection() {
           </span>
         </h1>
         <p className="font-mono text-text-secondary max-w-md text-sm md:text-base">
-          FlowStable UPI v1.0.0-alpha // INITIALIZING PROTOCOL...
+          AirPay UPI v1.0.0-alpha // INITIALIZING PROTOCOL...
           <br />
           BRIDGING MODERN UPI WITH LEGACY GSM SIGNALING.
         </p>

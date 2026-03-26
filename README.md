@@ -1,6 +1,6 @@
-# FlowStable UPI Website
+# AirPay UPI Website
 
-A modern, responsive landing page for the FlowStable UPI payment platform - an offline-first payment solution that bridges modern UPI with legacy GSM signaling.
+A modern, responsive landing page for the AirPay UPI payment platform - an offline-first payment solution that bridges modern UPI with legacy GSM signaling.
 
 ## 🚀 Features
 
@@ -9,7 +9,7 @@ A modern, responsive landing page for the FlowStable UPI payment platform - an o
 - **Framer Motion** for smooth animations and transitions
 - **Responsive Design** optimized for all devices
 - **Custom UI Components** including magnetic buttons, text scramble effects, and custom cursor
-- **Payment Platform Focus** - specifically designed for FlowStable UPI's offline payment capabilities
+- **Payment Platform Focus** - specifically designed for AirPay UPI's offline payment capabilities
 
 ## 📁 Project Structure
 
@@ -102,8 +102,8 @@ The built files will be in the `dist/` directory.
 
 ## 🔗 Related Projects
 
-- [FlowStable UPI Android App](https://github.com/FlowStablee/flowstable-UPI) - The Android payment application
-- [FlowStable Protocol Documentation](https://github.com/FlowStablee/flowstable-docs) - Technical documentation
+- [AirPay UPI Android App](https://github.com/cgchiraggupta/airpay) - The Android payment application
+- [AirPay Protocol Documentation](https://github.com/cgchiraggupta/airpay) - Technical documentation
 
 ## 📄 License
 
@@ -125,4 +125,4 @@ For questions or feedback, please open an issue on GitHub.
 
 ---
 
-Built with ❤️ for the FlowStable UPI project
+Built with ❤️ for the AirPay UPI project
