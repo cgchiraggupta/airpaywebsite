@@ -39,12 +39,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Show cursor on desktop, hide custom cursor on mobile */
-@media (hover: hover) and (pointer: fine) {
-  body {
-    cursor: none;
-  }
-}
+
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .no-scrollbar::-webkit-scrollbar {

@@ -1,10 +1,22 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
 import { useEffect } from 'react';
 import Lenis from 'lenis';
+import { CustomCursor } from './components/CustomCursor';
 import { HeroSection } from './components/HeroSection';
+import { ProblemSection } from './components/ProblemSection';
+
 import { FeaturesSection } from './components/FeaturesSection';
-import { DownloadSection } from './components/DownloadSection';
-import { HowToUseSection } from './components/HowToUseSection';
-import { ContactSection } from './components/ContactSection';
+import { MechanicsSection } from './components/MechanicsSection';
+import { ProcessSection } from './components/ProcessSection';
+import { MarqueeSection } from './components/MarqueeSection';
+import { IntegrationSection } from './components/IntegrationSection';
+import { TestimonialSection } from './components/TestimonialSection';
+import { PricingSection } from './components/PricingSection';
+import { FAQSection } from './components/FAQSection';
 import { Footer } from './components/Footer';
 
 export default function App() {
@@ -33,11 +45,17 @@ export default function App() {
 
   return (
     <main className="bg-background text-text-primary min-h-screen font-mono selection:bg-accent selection:text-background">
+      <CustomCursor />
       <HeroSection />
+      <ProblemSection />
       <FeaturesSection />
-      <DownloadSection />
-      <HowToUseSection />
-      <ContactSection />
+      <MechanicsSection />
+      <ProcessSection />
+      <MarqueeSection />
+      <IntegrationSection />
+      <TestimonialSection />
+      <PricingSection />
+      <FAQSection />
       <Footer />
     </main>
   );
