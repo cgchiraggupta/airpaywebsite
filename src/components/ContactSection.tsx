@@ -1,25 +1,27 @@
 import { Mail, Github, MessageSquare } from 'lucide-react';
+import { TextScramble } from './TextScramble';
 
 export function ContactSection() {
   return (
     <section className="py-16 sm:py-24 md:py-32 px-4 sm:px-8 md:px-24 border-b border-divider bg-background">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-12 md:mb-20">
+         <div className="text-center mb-12 md:mb-20">
           <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl uppercase tracking-tight mb-4">
-            Support & Contact
+            <TextScramble text="Support & Contact" delay={100} duration={600} />
           </h2>
           <p className="font-mono text-text-secondary max-w-2xl mx-auto text-sm md:text-base">
-            Need help or have questions? Get in touch with us.
+            <TextScramble text="Need help or have questions? Get in touch with us." delay={300} duration={800} />
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           <a 
             href="mailto:airpay.perry@gmail.com"
-            className="p-8 border border-divider bg-surface hover:bg-primary/10 transition-colors group text-center"
+            className="p-8 border border-divider bg-surface hover:bg-primary/10 transition-colors group text-center animate-fade-in-up"
+            style={{ animationDelay: '100ms' }}
           >
             <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-6 group-hover:bg-accent/30 transition-colors">
-              <Mail className="w-8 h-8 text-accent" />
+              <Mail className="w-8 h-8 text-accent group-hover:scale-110 transition-transform" />
             </div>
             <h3 className="text-xl font-bold uppercase tracking-wider mb-3">Email Support</h3>
             <p className="font-mono text-sm text-text-secondary mb-4">
@@ -30,14 +32,15 @@ export function ContactSection() {
             </div>
           </a>
           
-          <a 
+           <a 
             href="https://github.com/cgchiraggupta/airpay-testing-apk"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-8 border border-divider bg-surface hover:bg-primary/10 transition-colors group text-center"
+            className="p-8 border border-divider bg-surface hover:bg-primary/10 transition-colors group text-center animate-fade-in-up"
+            style={{ animationDelay: '200ms' }}
           >
             <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-6 group-hover:bg-accent/30 transition-colors">
-              <Github className="w-8 h-8 text-accent" />
+              <Github className="w-8 h-8 text-accent group-hover:scale-110 transition-transform" />
             </div>
             <h3 className="text-xl font-bold uppercase tracking-wider mb-3">GitHub</h3>
             <p className="font-mono text-sm text-text-secondary mb-4">
@@ -48,14 +51,15 @@ export function ContactSection() {
             </div>
           </a>
           
-          <a 
+           <a 
             href="https://airpaywebsite.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-8 border border-divider bg-surface hover:bg-primary/10 transition-colors group text-center"
+            className="p-8 border border-divider bg-surface hover:bg-primary/10 transition-colors group text-center animate-fade-in-up"
+            style={{ animationDelay: '300ms' }}
           >
             <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-6 group-hover:bg-accent/30 transition-colors">
-              <MessageSquare className="w-8 h-8 text-accent" />
+              <MessageSquare className="w-8 h-8 text-accent group-hover:scale-110 transition-transform" />
             </div>
             <h3 className="text-xl font-bold uppercase tracking-wider mb-3">Website</h3>
             <p className="font-mono text-sm text-text-secondary mb-4">
@@ -67,8 +71,12 @@ export function ContactSection() {
           </a>
         </div>
         
-        <div className="p-8 border border-divider bg-surface">
-          <h3 className="text-xl font-bold uppercase tracking-wider mb-6">Frequently Asked Questions</h3>
+         <div className="p-8 border border-divider bg-surface animate-fade-in-up"
+          style={{ animationDelay: '400ms' }}
+        >
+          <h3 className="text-xl font-bold uppercase tracking-wider mb-6">
+            <TextScramble text="Frequently Asked Questions" delay={100} duration={600} />
+          </h3>
           
           <div className="space-y-6">
             <div className="border-b border-divider pb-6">

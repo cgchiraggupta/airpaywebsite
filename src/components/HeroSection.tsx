@@ -1,3 +1,5 @@
+import { TextScramble } from './TextScramble';
+
 export function HeroSection() {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center px-4 sm:px-8 md:px-24 overflow-hidden border-b border-divider">
@@ -5,9 +7,15 @@ export function HeroSection() {
       
       <div className="relative z-10 max-w-4xl text-center flex flex-col gap-8">
         <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-semibold leading-[0.9] sm:leading-[0.85] tracking-tight">
-          <span className="block">Payments</span>
-          <span className="block">Without</span>
-          <span className="block text-accent">Internet</span>
+          <span className="block">
+            <TextScramble text="Payments" delay={100} duration={800} />
+          </span>
+          <span className="block">
+            <TextScramble text="Without" delay={300} duration={800} />
+          </span>
+          <span className="block text-accent">
+            <TextScramble text="Internet." delay={500} duration={800} />
+          </span>
         </h1>
         
         <p className="font-mono text-text-secondary max-w-2xl mx-auto text-sm md:text-base lg:text-lg">
@@ -34,7 +42,34 @@ export function HeroSection() {
         </div>
       </div>
 
-      {/* Simple decorative element */}
+      {/* Animated background element */}
+      <div className="absolute right-[-20vw] md:right-[-10vw] top-1/2 -translate-y-1/2 w-[60vw] h-[60vw] max-w-[500px] max-h-[500px] opacity-10 md:opacity-20 pointer-events-none">
+        <div className="w-full h-full border-[1px] border-divider relative flex items-center justify-center animate-spin-slow">
+          {/* Inner rings */}
+          <div className="w-[80%] h-[80%] border-[1px] border-divider absolute animate-spin-slow-reverse" />
+          <div className="w-[60%] h-[60%] border-[1px] border-divider absolute animate-spin-slow" />
+          
+          {/* Signal strength indicator */}
+          <div className="absolute flex flex-col items-center gap-1">
+            {[1, 2, 3, 4, 5].map((i) => (
+              <div 
+                key={i}
+                className="w-2 bg-success"
+                style={{ 
+                  height: `${i * 8}px`, 
+                  opacity: i <= 3 ? 1 : 0.3,
+                  animation: `pulse ${i * 0.3}s infinite alternate`
+                }}
+              />
+            ))}
+          </div>
+          
+          {/* Center dot */}
+          <div className="w-4 h-4 bg-accent absolute animate-pulse" />
+        </div>
+      </div>
+
+      {/* Status indicator */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 opacity-30">
         <div className="flex items-center gap-2 font-mono text-xs text-text-secondary">
           <div className="w-2 h-2 bg-success rounded-full animate-pulse"></div>

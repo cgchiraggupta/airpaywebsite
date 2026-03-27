@@ -1,4 +1,5 @@
-import { QrCode, Smartphone, Lock, CheckCircle } from 'lucide-react';
+import { QrCode, Smartphone, Lock, CheckCircle, ChevronRight } from 'lucide-react';
+import { TextScramble } from './TextScramble';
 
 export function HowToUseSection() {
   const steps = [
@@ -37,12 +38,12 @@ export function HowToUseSection() {
   return (
     <section id="how-to-use" className="py-16 sm:py-24 md:py-32 px-4 sm:px-8 md:px-24 border-b border-divider bg-surface">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12 md:mb-20">
+         <div className="text-center mb-12 md:mb-20">
           <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl uppercase tracking-tight mb-4">
-            How to Use AirPay
+            <TextScramble text="How It Works" delay={200} duration={600} />
           </h2>
           <p className="font-mono text-text-secondary max-w-2xl mx-auto text-sm md:text-base">
-            Simple steps to make offline UPI payments.
+            <TextScramble text="Simple steps to make offline UPI payments." delay={400} duration={800} />
           </p>
         </div>
         
@@ -62,28 +63,31 @@ export function HowToUseSection() {
                     isEven ? 'md:flex-row' : 'md:flex-row-reverse'
                   }`}
                 >
-                  {/* Step content */}
+                   {/* Step content */}
                   <div className={`w-full md:w-1/2 ${isEven ? 'md:pr-12' : 'md:pl-12'} mb-8 md:mb-0`}>
-                    <div className="p-6 md:p-8 border border-divider bg-background hover:bg-primary/5 transition-colors">
+                    <div className="p-6 md:p-8 border border-divider bg-background hover:bg-primary/5 transition-colors group animate-fade-in-up"
+                      style={{ animationDelay: `${index * 100}ms` }}
+                    >
                       <div className="flex items-center gap-4 mb-6">
-                        <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
+                        <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center group-hover:bg-accent/30 transition-colors animate-pulse">
                           <span className="font-mono font-bold text-accent">{step.number}</span>
                         </div>
-                        <Icon className="w-8 h-8 text-accent" />
+                        <Icon className="w-8 h-8 text-accent group-hover:scale-110 transition-transform" />
+                        <ChevronRight className="w-5 h-5 text-text-hint ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
                       </div>
                       
                       <h3 className="text-xl font-bold uppercase tracking-wider mb-4">
-                        {step.title}
+                        <TextScramble text={step.title} delay={index * 100 + 200} duration={400} />
                       </h3>
                       
-                      <p className="font-mono text-sm text-text-secondary leading-relaxed">
+                      <p className="font-mono text-sm text-text-secondary leading-relaxed group-hover:text-text-primary/80 transition-colors">
                         {step.description}
                       </p>
                     </div>
                   </div>
                   
-                  {/* Center dot for desktop */}
-                  <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-background border-4 border-accent z-10 items-center justify-center">
+                   {/* Center dot for desktop */}
+                  <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-background border-4 border-accent z-10 items-center justify-center animate-pulse">
                     <div className="w-2 h-2 rounded-full bg-accent"></div>
                   </div>
                   
@@ -95,11 +99,13 @@ export function HowToUseSection() {
           </div>
         </div>
         
-        <div className="mt-16 p-8 border border-divider bg-background">
+         <div className="mt-16 p-8 border border-divider bg-background animate-fade-in-up"
+          style={{ animationDelay: '500ms' }}
+        >
           <div className="flex flex-col md:flex-row items-center gap-6">
             <div className="flex-1">
               <h3 className="text-xl font-bold uppercase tracking-wider mb-3">
-                Important Security Note
+                <TextScramble text="Security First" delay={100} duration={500} />
               </h3>
               <p className="font-mono text-sm text-text-secondary">
                 AirPay never automatically enters your UPI PIN. You must manually enter it 
@@ -108,7 +114,7 @@ export function HowToUseSection() {
               </p>
             </div>
             
-            <div className="px-6 py-3 border border-success/30 bg-success/10">
+            <div className="px-6 py-3 border border-success/30 bg-success/10 animate-pulse">
               <div className="flex items-center gap-2">
                 <Lock className="w-5 h-5 text-success" />
                 <span className="font-mono text-sm text-success">PIN PROTECTED</span>
