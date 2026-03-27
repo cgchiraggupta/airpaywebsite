@@ -111,8 +111,8 @@ html {
   -webkit-overflow-scrolling: touch;
 }
 
-/* Custom animations */
-@keyframes spin-slow {
+/* Custom animations - FAST VERSION */
+@keyframes spin-fast {
   from {
     transform: rotate(0deg);
   }
@@ -121,7 +121,7 @@ html {
   }
 }
 
-@keyframes spin-slow-reverse {
+@keyframes spin-fast-reverse {
   from {
     transform: rotate(360deg);
   }
@@ -130,28 +130,28 @@ html {
   }
 }
 
-@keyframes pulse {
+@keyframes pulse-fast {
   0%, 100% {
-    opacity: 0.3;
+    opacity: 0.5;
   }
   50% {
     opacity: 1;
   }
 }
 
-@keyframes float {
+@keyframes float-fast {
   0%, 100% {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
   }
 }
 
-@keyframes fade-in-up {
+@keyframes fade-in-up-fast {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
@@ -159,18 +159,35 @@ html {
   }
 }
 
-.animate-spin-slow {
-  animation: spin-slow 20s linear infinite;
+@keyframes bounce-fast {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
 }
 
-.animate-spin-slow-reverse {
-  animation: spin-slow-reverse 15s linear infinite;
+.animate-spin-fast {
+  animation: spin-fast 8s linear infinite;
 }
 
-.animate-float {
-  animation: float 3s ease-in-out infinite;
+.animate-spin-fast-reverse {
+  animation: spin-fast-reverse 6s linear infinite;
 }
 
-.animate-fade-in-up {
-  animation: fade-in-up 0.6s ease-out forwards;
+.animate-float-fast {
+  animation: float-fast 1.5s ease-in-out infinite;
+}
+
+.animate-fade-in-up-fast {
+  animation: fade-in-up-fast 0.3s ease-out forwards;
+}
+
+.animate-pulse-fast {
+  animation: pulse-fast 1s ease-in-out infinite;
+}
+
+.animate-bounce-fast {
+  animation: bounce-fast 0.5s ease-in-out infinite;
 }

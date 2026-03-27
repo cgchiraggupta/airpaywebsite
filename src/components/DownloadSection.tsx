@@ -5,28 +5,28 @@ export function DownloadSection() {
   return (
     <section className="py-16 sm:py-24 md:py-32 px-4 sm:px-8 md:px-24 border-b border-divider bg-background">
       <div className="max-w-4xl mx-auto text-center">
-         <div className="inline-flex items-center gap-2 px-4 py-2 border border-divider rounded-full mb-8 animate-pulse">
-          <ArrowDown className="w-4 h-4 text-accent animate-bounce" />
+         <div className="inline-flex items-center gap-2 px-4 py-2 border border-divider rounded-full mb-8 animate-pulse-fast">
+          <ArrowDown className="w-4 h-4 text-accent animate-bounce-fast" />
           <span className="font-mono text-xs uppercase tracking-widest">Download Now</span>
         </div>
         
         <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl uppercase tracking-tight mb-6">
-          <TextScramble text="Get AirPay" delay={100} duration={600} />
+          <TextScramble text="Get AirPay" delay={50} duration={300} />
         </h2>
         
         <p className="font-mono text-text-secondary text-sm md:text-base lg:text-lg max-w-2xl mx-auto mb-12">
-          <TextScramble text="Download the APK file directly to your Android device." delay={300} duration={800} />
+          <TextScramble text="Download the APK file directly to your Android device." delay={150} duration={400} />
           <br />
-          <TextScramble text="Works on Android 8.0+ with USSD banking enabled." delay={500} duration={800} />
+          <TextScramble text="Works on Android 8.0+ with USSD banking enabled." delay={250} duration={400} />
         </p>
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
            <a 
             href="https://github.com/cgchiraggupta/airpay-testing-apk/raw/main/airpay-app-debug.apk"
-            className="px-10 py-5 bg-accent text-white font-mono text-base hover:bg-accent/90 transition-colors active:scale-95 touch-manipulation min-h-[56px] inline-flex items-center justify-center gap-3 text-lg animate-float"
+            className="px-10 py-5 bg-accent text-white font-mono text-base hover:bg-accent/90 transition-colors active:scale-95 touch-manipulation min-h-[56px] inline-flex items-center justify-center gap-3 text-lg animate-float-fast"
             download="airpay-app-debug.apk"
           >
-            <Download className="w-6 h-6 animate-bounce" />
+            <Download className="w-6 h-6 animate-bounce-fast" />
             DOWNLOAD APK (26 MB)
           </a>
           
@@ -41,8 +41,8 @@ export function DownloadSection() {
         </div>
         
          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
-          <div className="p-6 border border-divider bg-surface hover:bg-primary/5 transition-colors group animate-fade-in-up"
-            style={{ animationDelay: '100ms' }}
+          <div className="p-6 border border-divider bg-surface hover:bg-primary/5 transition-colors group animate-fade-in-up-fast"
+            style={{ animationDelay: '50ms' }}
           >
             <div className="flex items-center gap-3 mb-4">
               <Smartphone className="w-6 h-6 text-accent group-hover:scale-110 transition-transform" />
@@ -56,8 +56,8 @@ export function DownloadSection() {
             </ul>
           </div>
           
-          <div className="p-6 border border-divider bg-surface hover:bg-primary/5 transition-colors group animate-fade-in-up"
-            style={{ animationDelay: '200ms' }}
+          <div className="p-6 border border-divider bg-surface hover:bg-primary/5 transition-colors group animate-fade-in-up-fast"
+            style={{ animationDelay: '100ms' }}
           >
             <div className="flex items-center gap-3 mb-4">
               <Shield className="w-6 h-6 text-accent group-hover:scale-110 transition-transform" />
@@ -71,12 +71,12 @@ export function DownloadSection() {
             </ul>
           </div>
           
-          <div className="p-6 border border-divider bg-surface hover:bg-primary/5 transition-colors group animate-fade-in-up"
-            style={{ animationDelay: '300ms' }}
+          <div className="p-6 border border-divider bg-surface hover:bg-primary/5 transition-colors group animate-fade-in-up-fast"
+            style={{ animationDelay: '150ms' }}
           >
             <div className="flex items-center gap-3 mb-4">
               <div className="w-6 h-6 rounded-full bg-success/20 flex items-center justify-center group-hover:bg-success/30 transition-colors">
-                <div className="w-3 h-3 rounded-full bg-success animate-pulse"></div>
+                <div className="w-3 h-3 rounded-full bg-success animate-pulse-fast"></div>
               </div>
               <h3 className="font-bold uppercase tracking-wider">Safety</h3>
             </div>
