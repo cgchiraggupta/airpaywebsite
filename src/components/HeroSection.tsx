@@ -14,11 +14,11 @@ export function HeroSection() {
   const rotation = seconds * 6;
 
   return (
-    <section className="relative min-h-screen flex items-center justify-between px-8 md:px-24 overflow-hidden border-b border-divider">
+     <section className="relative min-h-screen flex flex-col md:flex-row items-center justify-between px-4 sm:px-8 md:px-24 overflow-hidden border-b border-divider pt-20 md:pt-0">
       <div className="noise-overlay" />
       
       <div className="relative z-10 max-w-4xl flex flex-col gap-8">
-        <h1 className="font-heading text-6xl md:text-8xl lg:text-9xl font-semibold leading-[0.85] tracking-tight">
+         <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-semibold leading-[0.9] sm:leading-[0.85] tracking-tight">
           <TextScramble text="Payments" delay={100} duration={800} />
           <br />
           <TextScramble text="without" delay={300} duration={800} />
@@ -27,22 +27,22 @@ export function HeroSection() {
             <TextScramble text="Internet." delay={500} duration={800} />
           </span>
         </h1>
-        <p className="font-mono text-text-secondary max-w-md text-sm md:text-base">
+         <p className="font-mono text-text-secondary max-w-md text-xs sm:text-sm md:text-base">
           AirPay UPI v1.0.0-alpha // INITIALIZING PROTOCOL...
           <br />
           BRIDGING MODERN UPI WITH LEGACY GSM SIGNALING.
         </p>
-        <div className="flex gap-4 mt-4">
-          <button className="px-8 py-3 bg-accent text-white font-mono text-sm hover:bg-accent/90 transition-colors">
+         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6">
+          <button className="px-6 py-4 sm:px-8 sm:py-3 bg-accent text-white font-mono text-sm hover:bg-accent/90 transition-colors active:scale-95 touch-manipulation min-h-[48px]">
             DOWNLOAD APK
           </button>
-          <button className="px-8 py-3 border border-divider text-text-primary font-mono text-sm hover:bg-surface transition-colors">
+          <button className="px-6 py-4 sm:px-8 sm:py-3 border border-divider text-text-primary font-mono text-sm hover:bg-surface transition-colors active:scale-95 touch-manipulation min-h-[48px]">
             VIEW DOCS
           </button>
         </div>
       </div>
 
-      <div className="absolute right-[-20vw] top-1/2 -translate-y-1/2 w-[80vw] h-[80vw] max-w-[800px] max-h-[800px] opacity-20 pointer-events-none">
+       <div className="absolute md:right-[-20vw] right-[-40vw] top-1/2 -translate-y-1/2 w-[80vw] h-[80vw] max-w-[600px] max-h-[600px] md:max-w-[800px] md:max-h-[800px] opacity-10 md:opacity-20 pointer-events-none">
         <div className="w-full h-full border-[1px] border-divider relative flex items-center justify-center">
           {/* Inner rings */}
           <div className="w-[80%] h-[80%] border-[1px] border-divider absolute" />

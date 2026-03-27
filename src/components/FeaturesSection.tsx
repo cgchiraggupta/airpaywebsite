@@ -13,20 +13,22 @@ export function FeaturesSection() {
   ];
 
   return (
-    <section className="py-32 px-8 md:px-24 border-b border-divider bg-background">
+     <section className="py-16 sm:py-24 md:py-32 px-4 sm:px-8 md:px-24 border-b border-divider bg-background">
       <div className="max-w-7xl mx-auto">
-        <div className="flex justify-between items-end mb-16 border-b border-divider pb-4">
-          <h2 className="font-heading text-4xl md:text-6xl uppercase tracking-tight">Protocol Features</h2>
-          <span className="font-mono text-sm text-text-hint hidden md:block">STATUS: <span className="text-success">OPERATIONAL</span></span>
+         <div className="flex justify-between items-end mb-8 sm:mb-16 border-b border-divider pb-4">
+          <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-6xl uppercase tracking-tight">Protocol Features</h2>
+          <span className="font-mono text-xs sm:text-sm text-text-hint hidden sm:block">STATUS: <span className="text-success">OPERATIONAL</span></span>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border border-divider">
           {features.map((feature, i) => (
-            <div
+             <div
               key={i}
               onMouseEnter={() => setHovered(i)}
               onMouseLeave={() => setHovered(null)}
-              className="p-8 border-b lg:border-b-0 lg:border-r last:border-b-0 lg:last:border-r-0 border-divider bg-surface hover:bg-primary hover:text-text-primary transition-colors duration-200 flex flex-col group"
+              onTouchStart={() => setHovered(i)}
+              onTouchEnd={() => setHovered(null)}
+              className="p-6 sm:p-8 border-b lg:border-b-0 lg:border-r last:border-b-0 lg:last:border-r-0 border-divider bg-surface hover:bg-primary hover:text-text-primary active:bg-primary transition-colors duration-200 flex flex-col group touch-manipulation"
             >
               <div className="flex justify-between items-center mb-12 font-mono text-xs">
                 <span className="text-text-hint group-hover:text-text-primary/50 transition-colors">{feature.id}</span>
@@ -34,7 +36,7 @@ export function FeaturesSection() {
               </div>
               
               <div className="flex-1">
-                <h3 className="text-xl uppercase tracking-wider mb-4 font-bold h-14">
+                 <h3 className="text-lg sm:text-xl uppercase tracking-wider mb-4 font-bold min-h-[56px] sm:h-14">
                   {hovered === i ? <TextScramble text={feature.title} duration={300} /> : feature.title}
                 </h3>
                 <p className="text-sm leading-relaxed text-text-secondary group-hover:text-text-primary/70 transition-colors mb-8">
