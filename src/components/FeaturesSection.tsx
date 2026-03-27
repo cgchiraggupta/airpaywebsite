@@ -37,7 +37,7 @@ export function FeaturesSection() {
       <div className="max-w-7xl mx-auto">
          <div className="flex justify-between items-end mb-8 sm:mb-16 border-b border-divider pb-4">
           <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl uppercase tracking-tight">
-            <TextScramble text="Key Features" delay={100} duration={300} />
+            <TextScramble text="Key Features" delay={200} duration={500} />
           </h2>
           <span className="font-mono text-xs sm:text-sm text-text-hint hidden sm:block">STATUS: <span className="text-success">ACTIVE</span></span>
         </div>
@@ -61,7 +61,7 @@ export function FeaturesSection() {
                 
                 <div className="flex-1">
                    <h3 className="text-lg sm:text-xl uppercase tracking-wider mb-4 font-bold min-h-[56px] sm:h-14">
-                    {hovered === i ? <TextScramble text={feature.title} duration={150} /> : feature.title}
+                    {hovered === i ? <TextScramble text={feature.title} duration={250} /> : feature.title}
                   </h3>
                   <p className="text-sm leading-relaxed text-text-secondary group-hover:text-text-primary/70 transition-colors mb-6">
                     {feature.description}

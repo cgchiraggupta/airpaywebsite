@@ -40,10 +40,10 @@ export function HowToUseSection() {
       <div className="max-w-6xl mx-auto">
          <div className="text-center mb-12 md:mb-20">
           <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl uppercase tracking-tight mb-4">
-            <TextScramble text="How It Works" delay={100} duration={300} />
+            <TextScramble text="How It Works" delay={200} duration={500} />
           </h2>
           <p className="font-mono text-text-secondary max-w-2xl mx-auto text-sm md:text-base">
-            <TextScramble text="Simple steps to make offline UPI payments." delay={200} duration={400} />
+            <TextScramble text="Simple steps to make offline UPI payments." delay={400} duration={600} />
           </p>
         </div>
         
@@ -65,11 +65,11 @@ export function HowToUseSection() {
                 >
                    {/* Step content */}
                   <div className={`w-full md:w-1/2 ${isEven ? 'md:pr-12' : 'md:pl-12'} mb-8 md:mb-0`}>
-                    <div className="p-6 md:p-8 border border-divider bg-background hover:bg-primary/5 transition-colors group animate-fade-in-up-fast"
-                      style={{ animationDelay: `${index * 50}ms` }}
+                    <div className="p-6 md:p-8 border border-divider bg-background hover:bg-primary/5 transition-colors group animate-fade-in-up-optimal"
+                      style={{ animationDelay: `${index * 100}ms` }}
                     >
                       <div className="flex items-center gap-4 mb-6">
-                        <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center group-hover:bg-accent/30 transition-colors animate-pulse-fast">
+                        <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center group-hover:bg-accent/30 transition-colors animate-pulse-optimal">
                           <span className="font-mono font-bold text-accent">{step.number}</span>
                         </div>
                         <Icon className="w-8 h-8 text-accent group-hover:scale-110 transition-transform" />
@@ -77,7 +77,7 @@ export function HowToUseSection() {
                       </div>
                       
                       <h3 className="text-xl font-bold uppercase tracking-wider mb-4">
-                        <TextScramble text={step.title} delay={index * 50 + 100} duration={200} />
+                        <TextScramble text={step.title} delay={index * 100 + 200} duration={300} />
                       </h3>
                       
                       <p className="font-mono text-sm text-text-secondary leading-relaxed group-hover:text-text-primary/80 transition-colors">
@@ -87,7 +87,7 @@ export function HowToUseSection() {
                   </div>
                   
                    {/* Center dot for desktop */}
-                  <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-background border-4 border-accent z-10 items-center justify-center animate-pulse-fast">
+                  <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-background border-4 border-accent z-10 items-center justify-center animate-pulse-optimal">
                     <div className="w-2 h-2 rounded-full bg-accent"></div>
                   </div>
                   
@@ -99,13 +99,13 @@ export function HowToUseSection() {
           </div>
         </div>
         
-         <div className="mt-16 p-8 border border-divider bg-background animate-fade-in-up-fast"
-          style={{ animationDelay: '250ms' }}
+         <div className="mt-16 p-8 border border-divider bg-background animate-fade-in-up-optimal"
+          style={{ animationDelay: '500ms' }}
         >
           <div className="flex flex-col md:flex-row items-center gap-6">
             <div className="flex-1">
               <h3 className="text-xl font-bold uppercase tracking-wider mb-3">
-                <TextScramble text="Security First" delay={50} duration={250} />
+                <TextScramble text="Security First" delay={100} duration={400} />
               </h3>
               <p className="font-mono text-sm text-text-secondary">
                 AirPay never automatically enters your UPI PIN. You must manually enter it 
@@ -114,7 +114,7 @@ export function HowToUseSection() {
               </p>
             </div>
             
-            <div className="px-6 py-3 border border-success/30 bg-success/10 animate-pulse-fast">
+            <div className="px-6 py-3 border border-success/30 bg-success/10 animate-pulse-optimal">
               <div className="flex items-center gap-2">
                 <Lock className="w-5 h-5 text-success" />
                 <span className="font-mono text-sm text-success">PIN PROTECTED</span>
