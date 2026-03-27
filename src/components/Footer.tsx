@@ -18,10 +18,10 @@ export function Footer() {
       </div>
 
        <div className="flex flex-col items-start sm:items-end gap-1 sm:gap-2 font-mono text-[9px] sm:text-[10px] uppercase tracking-widest text-text-hint mt-4 sm:mt-0">
-        <a href="#" className="hover:text-text-primary transition-colors duration-0">Documentation</a>
-        <a href="#" className="hover:text-text-primary transition-colors duration-0">GitHub</a>
-        <a href="#" className="hover:text-text-primary transition-colors duration-0">Security</a>
-        <a href="#" className="hover:text-text-primary transition-colors duration-0">Compliance</a>
+        <a href="https://github.com/cgchiraggupta/airpay-testing-apk" target="_blank" rel="noopener noreferrer" className="hover:text-text-primary transition-colors duration-0">Documentation</a>
+        <a href="https://github.com/cgchiraggupta/airpay-testing-apk" target="_blank" rel="noopener noreferrer" className="hover:text-text-primary transition-colors duration-0">GitHub</a>
+        <a href="https://github.com/cgchiraggupta/airpay-testing-apk" target="_blank" rel="noopener noreferrer" className="hover:text-text-primary transition-colors duration-0">Security</a>
+        <a href="https://github.com/cgchiraggupta/airpay-testing-apk" target="_blank" rel="noopener noreferrer" className="hover:text-text-primary transition-colors duration-0">Compliance</a>
         <div className="mt-4 text-text-secondary">Â© 2026 AIRPAY PROTOCOL</div>
       </div>
     </footer>
