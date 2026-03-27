@@ -22,7 +22,7 @@ export function DownloadSection() {
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
            <a 
-            href="https://github.com/cgchiraggupta/airpay-testing-apk/raw/main/airpay-app-debug.apk"
+            href="https://forms.gle/ZKgYvDEbLDuiM6nv9/raw/main/airpay-app-debug.apk"
             className="px-10 py-5 bg-accent text-white font-mono text-base hover:bg-accent/90 transition-colors active:scale-95 touch-manipulation min-h-[56px] inline-flex items-center justify-center gap-3 text-lg animate-float-optimal"
             download="airpay-app-debug.apk"
           >
@@ -31,7 +31,7 @@ export function DownloadSection() {
           </a>
           
           <a 
-            href="https://github.com/cgchiraggupta/airpay-testing-apk"
+            href="https://forms.gle/ZKgYvDEbLDuiM6nv9"
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-4 border border-divider text-text-primary font-mono text-sm hover:bg-surface transition-colors active:scale-95 touch-manipulation min-h-[48px] inline-flex items-center justify-center gap-2"

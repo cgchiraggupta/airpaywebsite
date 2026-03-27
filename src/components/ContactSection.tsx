@@ -33,7 +33,7 @@ export function ContactSection() {
           </a>
           
           <a 
-            href="https://github.com/cgchiraggupta/airpay-testing-apk"
+            href="https://forms.gle/ZKgYvDEbLDuiM6nv9"
             target="_blank"
             rel="noopener noreferrer"
             className="p-8 border border-divider bg-surface hover:bg-primary/10 transition-colors group text-center animate-fade-in-up-optimal"

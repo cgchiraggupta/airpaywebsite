@@ -25,7 +25,7 @@ export function HeroSection() {
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
           <a 
-            href="https://github.com/cgchiraggupta/airpay-testing-apk" 
+            href="https://forms.gle/ZKgYvDEbLDuiM6nv9" 
             target="_blank" 
             rel="noopener noreferrer"
             className="px-8 py-4 bg-accent text-white font-mono text-sm hover:bg-accent/90 transition-colors active:scale-95 touch-manipulation min-h-[48px] inline-flex items-center justify-center"
