@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import Lenis from 'lenis';
 import { HeroSection } from './components/HeroSection';
@@ -6,8 +7,13 @@ import { DownloadSection } from './components/DownloadSection';
 import { HowToUseSection } from './components/HowToUseSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
+import { AboutPage } from './pages/AboutPage';
 
-export default function App() {
+// This component can use useLocation because it's inside Router
+function AppContent() {
+  const location = useLocation();
+  const showAboutButton = location.pathname === '/';
+
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.2,
@@ -33,12 +39,40 @@ export default function App() {
 
   return (
     <main className="bg-background text-text-primary min-h-screen font-mono selection:bg-accent selection:text-background">
-      <HeroSection />
-      <FeaturesSection />
-      <DownloadSection />
-      <HowToUseSection />
-      <ContactSection />
-      <Footer />
+      {/* Show button only on home page */}
+      {showAboutButton && (
+        <div className="fixed top-6 right-6 z-50">
+          <Link
+            to="/about"
+            className="px-4 py-2 text-sm font-mono border border-divider rounded-full text-text-secondary hover:text-text-primary hover:border-flow-shell-start/30 transition-all duration-300 backdrop-blur-sm bg-surface/30"
+          >
+            About
+          </Link>
+        </div>
+      )}
+
+      <Routes>
+        <Route path="/" element={
+          <>
+            <HeroSection />
+            <FeaturesSection />
+            <DownloadSection />
+            <HowToUseSection />
+            <ContactSection />
+            <Footer />
+          </>
+        } />
+        <Route path="/about" element={<AboutPage />} />
+      </Routes>
     </main>
+  );
+}
+
+// Main App component just wraps everything with Router
+export default function App() {
+  return (
+    <Router>
+      <AppContent />
+    </Router>
   );
 }
