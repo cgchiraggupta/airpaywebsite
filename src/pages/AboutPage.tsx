@@ -837,7 +837,7 @@ export function AboutPage() {
 
           {/* GSM  Flow */}
           <TerminalBlock title="transaction-flow.sh">
-            <GSM FlowVisualization />
+            <GSMFlowVisualization />
           </TerminalBlock>
 
           {/* Architecture cards */}
