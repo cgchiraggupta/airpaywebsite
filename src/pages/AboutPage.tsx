@@ -237,15 +237,15 @@ function AnimatedStat({ value, label, suffix = '' }: { value: string; label: str
   );
 }
 
-// ─── USSD Flow Visualization ──────────────────────────────────────────────────
-function USSDFlowVisualization() {
+// ─── GSM  Flow Visualization ──────────────────────────────────────────────────
+function GSM FlowVisualization() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-50px' });
 
   const steps = [
     { icon: Smartphone, label: 'Scan QR / Enter UPI ID', color: 'text-flow-shell-start' },
     { icon: Radio, label: 'Dial GSM Code', color: 'text-warning' },
-    { icon: Signal, label: 'Navigate USSD Menu', color: 'text-flow-lime' },
+    { icon: Signal, label: 'Navigate GSM  Menu', color: 'text-flow-lime' },
     { icon: Shield, label: 'User Enters MPIN', color: 'text-accent' },
     { icon: Zap, label: 'Transaction Complete', color: 'text-success' },
   ];
@@ -593,7 +593,7 @@ export function AboutPage() {
       tagline: '18, engineer. I like to build.',
       bio: '',
       funFact: 'Believes the best way to learn a technology is to build something real with it.',
-      skills: ['React', 'TypeScript', 'Android', 'System Design', 'Node.js', 'USSD Protocols'],
+      skills: ['React', 'TypeScript', 'Android', 'System Design', 'Node.js', 'GSM  Protocols'],
       location: 'Delhi, India',
       imageUrl: "/images/image1.jpeg",
       links: {
@@ -830,22 +830,22 @@ export function AboutPage() {
             </h2>
             <p className="text-text-secondary text-base max-w-2xl mx-auto">
               AirPay is an asynchronous, offline-tolerant payment orchestration layer. It bridges modern UPI 
-              with legacy USSD channels, using an intelligent accessibility service to navigate 
+              with legacy GSM  channels, using an intelligent accessibility service to navigate 
               banking menus automatically.
             </p>
           </motion.div>
 
-          {/* USSD Flow */}
+          {/* GSM  Flow */}
           <TerminalBlock title="transaction-flow.sh">
-            <USSDFlowVisualization />
+            <GSM FlowVisualization />
           </TerminalBlock>
 
           {/* Architecture cards */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
             <ArchCard
               icon={Radio}
-              title="USSD Interceptor"
-              description="Background daemon that monitors and programmatically interacts with USSD menus — no internet tunnel needed, just GSM."
+              title="GSM  Interceptor"
+              description="Background daemon that monitors and programmatically interacts with GSM  menus — no internet tunnel needed, just GSM."
               index={0}
             />
             <ArchCard
@@ -875,7 +875,7 @@ export function AboutPage() {
             <ArchCard
               icon={Users}
               title="Multi-Carrier Support"
-              description="Compatible with major Indian carriers — Airtel, Jio, Vi. Works with any USSD-enabled SIM on Android 8.0+."
+              description="Compatible with major Indian carriers — Airtel, Jio, Vi. Works with any GSM -enabled SIM on Android 8.0+."
               index={5}
             />
           </div>
@@ -1094,7 +1094,7 @@ export function AboutPage() {
             </h2>
             <p className="text-text-secondary text-base md:text-lg mb-10 max-w-lg mx-auto">
               We're building the future of offline-first payments. Want to know more, 
-              test the app, or just chat about USSD protocols?
+              test the app, or just chat about GSM  protocols?
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <MagneticWrap>

@@ -82,28 +82,28 @@ export function ContactSection() {
             <div className="border-b border-divider pb-6">
               <h4 className="font-bold text-lg mb-2">Is AirPay safe to use?</h4>
               <p className="font-mono text-sm text-text-secondary">
-                Yes. AirPay never automatically enters your UPI PIN. You must manually enter it during the USSD process. No sensitive information is stored or transmitted automatically.
+                Yes. AirPay never automatically enters your UPI PIN. You must manually enter it during the GSM  process. No sensitive information is stored or transmitted automatically.
               </p>
             </div>
             
             <div className="border-b border-divider pb-6">
               <h4 className="font-bold text-lg mb-2">Which banks are supported?</h4>
               <p className="font-mono text-sm text-text-secondary">
-                AirPay works with any Indian bank that supports USSD banking (*99# service). This includes most major banks like SBI, HDFC, ICICI, Axis, and others.
+                AirPay works with any Indian bank that supports GSM  banking (GSM  service). This includes most major banks like SBI, HDFC, ICICI, Axis, and others.
               </p>
             </div>
             
             <div className="border-b border-divider pb-6">
               <h4 className="font-bold text-lg mb-2">Do I need internet at all?</h4>
               <p className="font-mono text-sm text-text-secondary">
-                No internet is required for payments. The app uses USSD (Unstructured Supplementary Service Data) which works over the mobile cellular network.
+                No internet is required for payments. The app uses GSM  (Unstructured Supplementary Service Data) which works over the mobile cellular network.
               </p>
             </div>
             
             <div>
               <h4 className="font-bold text-lg mb-2">Is there any fee?</h4>
               <p className="font-mono text-sm text-text-secondary">
-                AirPay is completely free to download and use. Standard USSD charges from your mobile operator may apply (usually free or minimal cost).
+                AirPay is completely free to download and use. Standard GSM  charges from your mobile operator may apply (usually free or minimal cost).
               </p>
             </div>
           </div>

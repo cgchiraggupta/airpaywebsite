@@ -27,7 +27,7 @@ export function FeaturesSection() {
     {
       icon: Zap,
       title: 'Fast',
-      description: 'Complete payments in seconds through USSD banking.',
+      description: 'Complete payments in seconds through GSM  banking.',
       metric: 'SECONDS ONLY',
     },
   ];

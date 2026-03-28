@@ -17,7 +17,7 @@ export function DownloadSection() {
         <p className="font-mono text-text-secondary text-sm md:text-base lg:text-lg max-w-2xl mx-auto mb-12">
           <TextScramble text="Download the APK file directly to your Android device." delay={300} duration={600} />
           <br />
-          <TextScramble text="Works on Android 8.0+ with USSD banking enabled." delay={500} duration={600} />
+          <TextScramble text="Works on Android 8.0+ with GSM  banking enabled." delay={500} duration={600} />
         </p>
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
@@ -50,7 +50,7 @@ export function DownloadSection() {
             </div>
             <ul className="font-mono text-sm text-text-secondary space-y-2">
               <li>• Android 8.0+ (Oreo)</li>
-              <li>• SIM with USSD banking</li>
+              <li>• SIM with GSM  banking</li>
               <li>• Mobile network signal</li>
               <li>• 50MB free storage</li>
             </ul>

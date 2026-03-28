@@ -18,8 +18,8 @@ export function HowToUseSection() {
     {
       number: '03',
       icon: Smartphone,
-      title: 'USSD Process',
-      description: 'App automatically accesses banking USSD menu (*99#).',
+      title: 'GSM  Process',
+      description: 'App automatically accesses banking GSM  menu (GSM ).',
     },
     {
       number: '04',
@@ -31,7 +31,7 @@ export function HowToUseSection() {
       number: '05',
       icon: CheckCircle,
       title: 'Complete',
-      description: 'Transaction completes through USSD. You receive confirmation.',
+      description: 'Transaction completes through GSM . You receive confirmation.',
     },
   ];
 
@@ -109,7 +109,7 @@ export function HowToUseSection() {
               </h3>
               <p className="font-mono text-sm text-text-secondary">
                 AirPay never automatically enters your UPI PIN. You must manually enter it 
-                when prompted during the USSD process. This ensures maximum security and 
+                when prompted during the GSM  process. This ensures maximum security and 
                 follows banking regulations.
               </p>
             </div>
