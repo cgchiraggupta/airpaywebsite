@@ -238,7 +238,7 @@ function AnimatedStat({ value, label, suffix = '' }: { value: string; label: str
 }
 
 // ─── GSM  Flow Visualization ──────────────────────────────────────────────────
-function GSM FlowVisualization() {
+function GSMFlowVisualization() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-50px' });
 
