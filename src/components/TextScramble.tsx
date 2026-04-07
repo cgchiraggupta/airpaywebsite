@@ -6,7 +6,7 @@ interface TextScrambleProps {
   duration?: number;
 }
 
-export function TextScramble({ text, delay = 0, duration = 800 }: TextScrambleProps) {
+export function TextScramble({ text, delay = 0, duration = 250 }: TextScrambleProps) {
   const [displayText, setDisplayText] = useState('');
   const [isScrambling, setIsScrambling] = useState(true);
 
@@ -25,11 +25,14 @@ export function TextScramble({ text, delay = 0, duration = 800 }: TextScramblePr
       char?: string;
     }> = [];
 
+    // Convert duration from milliseconds to frames (60fps)
+    const durationFrames = (duration / 1000) * 60;
+
     for (let i = 0; i < text.length; i++) {
       const from = chars[Math.floor(Math.random() * chars.length)];
       const to = text[i];
       const start = Math.random() * 10;
-      const end = start + Math.random() * duration;
+      const end = start + Math.random() * durationFrames;
       queue.push({ from, to, start, end });
     }
 

@@ -1,5 +1,5 @@
 // src/pages/AboutPage.tsx
-import { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { motion, useScroll, useTransform, useInView, useMotionValue, useSpring } from 'framer-motion';
 import { ArrowLeft, Github, Linkedin, Twitter, ExternalLink, Mail, MapPin, Calendar, Zap, Code2, Wifi, WifiOff, Signal, Shield, Smartphone, Radio, Users, Globe, ChevronRight } from 'lucide-react';
 import { Footer } from '../components/Footer';
