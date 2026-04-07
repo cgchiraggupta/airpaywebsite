@@ -52,7 +52,8 @@ function AppContent() {
       )}
 
       <Routes>
-        <Route path="/" element={
+        <Route path="/" element={<AboutPage />} />
+        <Route path="/about" element={
           <>
             <HeroSection />
             <FeaturesSection />
@@ -62,7 +63,6 @@ function AppContent() {
             <Footer />
           </>
         } />
-        <Route path="/about" element={<AboutPage />} />
       </Routes>
     </main>
   );
