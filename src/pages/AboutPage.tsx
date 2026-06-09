@@ -1099,7 +1099,9 @@ export function AboutPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <MagneticWrap>
                 <a
-                  href="/"
+                  href="https://airpay-public.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-flow-shell-start to-flow-shell-end text-white font-mono text-sm font-medium hover:shadow-lg hover:shadow-flow-shell-start/25 transition-all"
                 >
                   <span>Explore AirPay</span>
